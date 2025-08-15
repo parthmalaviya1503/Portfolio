@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About • Parth Malaviya</title>
+    <style>
+        :root {
+            --bg: #121417;
+            --card: #1a1f24;
+            --text: #e5e7eb;
+            --muted: #9ca3af;
+            --accent: #00e5ff;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            font-family: Inter, system-ui, Arial;
+            background: var(--bg);
+            color: var(--text)
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none
+        }
+
+        .nav {
+            position: sticky;
+            top: 0;
+            background: #101418cc;
+            border-bottom: 1px solid #222;
+            backdrop-filter: blur(8px)
+        }
+
+        .wrap {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 14px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center
+        }
+
+        .logo {
+            font-weight: 800;
+            font-size: 40px;
+            color: var(--accent)
+        }
+
+        .menu {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap
+        }
+
+        .btn {
+            padding: 8px 14px;
+            border: 2px solid var(--accent);
+            border-radius: 999px
+        }
+
+        .btn:hover {
+            background: var(--accent);
+            color: #041014
+        }
+
+        .active {
+            background: var(--accent);
+            color: #041014
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 34px auto;
+            padding: 0 20px
+        }
+
+        h1 {
+            font-size: 42px;
+            margin: 10px 0 24px;
+            text-align: center
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1.1fr .9fr;
+            gap: 22px
+        }
+
+        .card {
+            background-color: var(--card);
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #23303a;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            font-size: 1em;
+            color: #555;
+            line-height: 1.6;
+        }
+
+
+        .edu {
+            display: flex;
+            flex-direction: column;
+            gap: 18px
+        }
+
+        .edu .item {
+            background: #20262c;
+            border: 1px solid #2b3943;
+            padding: 18px;
+            border-radius: 14px
+        }
+
+        .edu h3 {
+            margin: 0 0 6px;
+            color: var(--accent)
+        }
+
+        .muted {
+            color: var(--muted)
+        }
+
+        @media (max-width:900px) {
+            .grid {
+                grid-template-columns: 1fr
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="wrap">
+            <div class="logo">Parth Malaviya</div>
+            <div class="menu">
+                <a class="btn" href="index.html">Home</a>
+                <a class="btn active" href="about.html">About</a>
+                <a class="btn" href="project.html">Projects</a>
+                <a class="btn" href="skill.html">Skills</a>
+                <a class="btn" href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1>About Me</h1>
+        <div class="grid">
+            <section class="card">
+                <p>
+                    I am a Computer Engineering student with a strong interest in programming, problem-solving, and
+                    innovative
+                    technology solutions. I enjoy exploring various programming languages and applying them to
+                    real-world projects.
+                    My academic journey has equipped me with skills in web development, data structures, and
+                    software design.
+                    Beyond academics, I am passionate about continuous learning and improving my technical
+                    abilities.
+                    I believe in teamwork, creativity, and adapting to challenges to achieve success.
+                    My goal is to contribute meaningfully to the tech industry while growing as a professional.
+                </p>
+            </section>
+
+            <aside class="edu">
+                <div class="item">
+                    <h3>🎓 B.Tech in Computer Engineering</h3>
+                    <div class="muted">Dharmsinh Desai University (DDU) — Nadiad</div>
+                    <div class="muted">CPI/CGPA: 8.83/10 • 2024 — 2028</div>
+                </div>
+                <div class="item">
+                    <h3>HSC, Science</h3>
+                    <div class="muted">GSHSEB • 2024 • 89.23%</div>
+                </div>
+                <div class="item">
+                    <h3>SSC</h3>
+                    <div class="muted">GSHSEB • 2022 • 94.5%</div>
+                </div>
+            </aside>
+        </div>
+    </main>
+</body>
+
+</html>
